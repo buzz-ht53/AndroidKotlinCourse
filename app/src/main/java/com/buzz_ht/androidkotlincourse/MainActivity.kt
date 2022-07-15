@@ -9,5 +9,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         println("This is the Test branch")
+        println("This is the Test 1 branch")
     }
 }
