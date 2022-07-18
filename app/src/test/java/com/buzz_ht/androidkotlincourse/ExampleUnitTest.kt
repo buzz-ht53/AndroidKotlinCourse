@@ -1,6 +1,6 @@
 package com.buzz_ht.androidkotlincourse
 
-import org.junit.Assert.assertEquals
+import junit.framework.Assert.assertTrue
 import org.junit.Test
 
 /**
@@ -10,7 +10,9 @@ import org.junit.Test
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 3)
-    }
+        fun generates_number(){
+        val dice = Dice(6)
+        val rollResult = dice.roll()
+            assertTrue(rollResult in 1..6)
+        }
 }
